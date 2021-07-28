@@ -12,7 +12,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .button {
   padding: 6px 24px;
 }
