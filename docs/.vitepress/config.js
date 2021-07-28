@@ -1,4 +1,4 @@
-const base = process.env.NODE_ENV === 'production' ? '/test-template' : '';
+const base = process.env.NODE_ENV === 'production' ? '/lib-demo' : '';
 const { resolve } = require('path');
 
 module.exports = {
