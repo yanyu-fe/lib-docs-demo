@@ -10,11 +10,17 @@ export default {
     exclude: [],
   },
   plugins: [vue()],
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src'),
+      src: resolve(__dirname, 'src'),
+    },
+  },
   build: {
     minify: true,
     lib: {
       entry: resolve('./src/index.ts'),
-      name: 'test-template',
+      name: 'lib-demo',
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
